@@ -1,0 +1,7 @@
+#!/bin/bash
+
+aws s3 cp google_logo.png s3://ds2022-cqb3tc/
+
+aws s3 presign --expires-in 604800 s3://ds2022-cqb3tc/google_logo.png
+
+https://ds2022-cqb3tc.s3.us-east-1.amazonaws.com/google_logo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIATX3PIDIOGW5SA6XL%2F20240927%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240927T014409Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e5959be92646200b07db87e28c0acc598d32e73f1f484c4a2ecae6482ea04be0
